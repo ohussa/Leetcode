@@ -5,6 +5,11 @@ Type "help", "copyright", "credits" or "license()" for more information.
 ... #     def __init__(self, val=0, next=None):
 ... #         self.val = val
 ... #         self.next = next
+... 
+... 
+... """Problem Description:Given the head of a singly linked list, return the middle node of the linked list.
+... 
+... If there are two middle nodes, return the second middle node."""
 ... class Solution(object):
 ...     def middleNode(self, head):
 ...         """
@@ -31,9 +36,9 @@ Type "help", "copyright", "credits" or "license()" for more information.
 ...         #i first go till end and find number of nodes
 ...         #then len//2 add 1. This works for where 2 middle or one both
 ...         #then traverse again this time till middle node
-...         #return middle node.
-...         #time complexity becomes O(n+0.5n)
-... 
-...         #Method2
-...         #store each node in arraylist
-...         #after we get the legnth of linkedlist
+        #return middle node.
+        #time complexity becomes O(n+0.5n)
+
+        #Method2
+        #store each node in arraylist
+        #after we get the legnth of linkedlist
