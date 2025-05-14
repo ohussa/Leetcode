@@ -7,8 +7,5 @@ Type "help", "copyright", "credits" or "license()" for more information.
 ...         :rtype: List[int]
 ...         """
 ...         runningSums=nums
-...         for i in range(len(runningSums)):
-...             if i==0:
-...                 runningSums[i]=runningSums[i]
-...             else:
-...                 runningSums[i]=runningSums[i-1]+runningSums[i]
+...         for i in range(1,len(runningSums)):
+...             runningSums[i]=runningSums[i-1]+runningSums[i]
