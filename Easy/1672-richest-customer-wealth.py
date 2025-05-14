@@ -10,16 +10,7 @@ The richest customer is the customer that has the maximum wealth."""
         :type accounts: List[List[int]]
         :rtype: int
         """
-        maxWealth=[]
-        maxWealth.append(0)
-        val=0
+        max_list=[sum(num) for num in accounts]
+        return max(max_list)
 
-        for customer in accounts:
-            for cus_accounts in customer:
-                val+=cus_accounts
-            if val>maxWealth[0]:
-                maxWealth.insert(0,val)
-            else:
-                maxWealth.append(val)
-            val=0
-        return maxWealth[0]
+#Now using list comprehension.
